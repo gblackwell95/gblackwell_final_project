@@ -1,0 +1,114 @@
+@charset "utf-8";
+/*
+    Author: Garret Blackwell
+    Filename: index_layout.css
+*/
+
+/* General Layout */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: auto;
+    clear: both;
+}
+
+/* Header & Nav Layout */
+header {
+    position: relative;
+    height: 25%;
+    min-height: 130px;
+}
+header img {
+    display: block;
+    float: left;
+    width: 67%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    z-index: 1;
+    min-width: 518px;
+    min-height: 130px;
+}
+header h1 {
+    position: absolute;
+    top: 3px;
+    left: 5%;
+    z-index: 2;
+    font-size: 3.1em;
+}
+header nav ul {
+    height: 100%;
+    min-height: 130px;
+}
+header nav ul li {
+    float: right;
+    clear: right;
+    width: 33%;
+    height: 33%;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 1.679% 0;
+}
+
+/* Main Layout */
+body aside {
+    float: right;
+    width: 33%;
+    font-size: 1.2em;
+    padding: 50px;
+}
+body main {
+    float: left;
+    width: 67%;
+    padding: 50px;
+    font-size: 1.3em;
+    line-height: 2em;
+}
+body aside blockquote {
+    margin: 10px 5px;
+    line-height: 1.5em;
+}
+body aside blockquote::before {
+    content:"\201c";
+    font-size: 1.7em;
+}
+body aside blockquote::after {
+    content:"\201d";
+    font-size: 1.7em;
+}
+body aside cite::before {
+    content: "\2003";
+    font-size: 0.8em;
+}
+body table {
+    clear: both;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 1.5em;
+}
+body table td {
+    text-align: center;
+}
+/* Footer Layout */
+footer {
+    clear: both;
+    text-align: center;
+    padding-top: 25px;
+}
